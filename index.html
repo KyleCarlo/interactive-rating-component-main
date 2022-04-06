@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <!-- <img src="design/mobile-thank-you-state.jpg" alt=""> -->
+
+  <section id="start" class="box">
+    <img src="images/icon-star.svg" alt="start-icon">
+    <h1>How did we do?</h1>
+    <h6>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </h6>
+    <div>
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+    </div>
+    <br>
+    <br>
+    <button class="submit">S U B M I T</button>
+  </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+  <section id="end" class="box" hidden>
+    <img src="images/illustration-thank-you.svg" alt="">
+    <h3>You selected <!-- Add rating here --> out of 5</h3>
+    <h1>Thank you!</h1>
+    <h6>
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </h6>
+  </section>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
